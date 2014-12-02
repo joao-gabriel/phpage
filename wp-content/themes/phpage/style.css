@@ -43,3 +43,19 @@ root {
   right: 0px;
   top: 10px;
 }
+
+.top20 {
+  margin-top: 20px;
+}
+
+.campo-busca {
+  width: 79%;
+  display: block;
+  float: left;
+}
+
+.btn-busca {
+  width: 20%;
+  display: block;
+  float: right;
+}

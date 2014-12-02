@@ -20,7 +20,7 @@
 
     <!-- Custom styles for this theme -->
     <link href="style.css" rel="stylesheet">
-    
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -45,7 +45,18 @@
     </div>
 
     <div class="container">
-
+      <div class='row'>
+        <div class="col-md-3 top20 pull-right">
+          <div class="form-group">
+            <form action="<?php echo home_url(); ?>/" method="get">
+              <input type="text" class="form-control campo-busca" placeholder="Search" name="s"/>
+              <button type="submit" class="btn btn-info btn-busca">
+                <span class="glyphicon-search glyphicon"></span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
       <div class="blog-header">
         <h1 class="blog-title">PHPage</h1>
         <p class="lead blog-description">PHP + MySQL + Wordpress + CakePHP + HTML5 + jQuery + CSS + Arduino + Whatever fits :P</p>
