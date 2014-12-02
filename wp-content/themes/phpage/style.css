@@ -1,0 +1,45 @@
+/* 
+    Document   : style.css
+    Created on : 01/12/2014, 21:57:22
+    Author     : joao
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+  display: block;
+}
+
+.blog-nav {
+  position: relative;
+}
+
+.blog-nav-item a, .blog-nav li:last-child a {
+  color: #cdddeb;
+}
+
+.blog-nav-item a:hover, .blog-nav-item a:focus, .blog-nav-item.current-menu-item a, .blog-nav li:last-child a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.current-menu-item a:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  vertical-align: middle;
+  content: " ";
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid;
+  border-left: 5px solid transparent;
+}
+
+.blog-nav li:last-child{
+  list-style: none;
+  position: absolute;
+  right: 0px;
+  top: 10px;
+}

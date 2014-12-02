@@ -1,0 +1,179 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: lang-plugin\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-03-29 15:28+0600\n"
+"PO-Revision-Date: 2012-12-20 20:06+0100\n"
+"Last-Translator: Stefano Callisto <stefano.callisto@gmail.com>\n"
+"Language-Team: frumatic <frumatic.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#: C:\WebServers\home\vietnam.com\application\wp-content\plugins\language-plugin/language-plugin.php:226
+msgid "Language"
+msgstr "Lingua"
+
+#: C:\WebServers\home\vietnam.com\application\wp-content\plugins\language-plugin/language-plugin.php:246
+msgid "Language options"
+msgstr "Opzioni lingue"
+
+#: C:\WebServers\home\vietnam.com\application\wp-content\plugins\language-plugin/language-plugin.php:252
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Non si dispone dei permessi necessari per accedere a questa pagina."
+
+#: C:\WebServers\home\vietnam.com\application\wp-content\plugins\language-plugin/language-plugin.php:287
+msgid "Options saved."
+msgstr "Opzioni salvate."
+
+#: C:\WebServers\home\vietnam.com\application\wp-content\plugins\language-plugin/language-plugin.php:306
+msgid "Stella plugin settings"
+msgstr "Opzioni plugin Stella"
+
+#: C:\WebServers\home\vietnam.com\application\wp-content\plugins\language-plugin/language-plugin.php:307
+msgid "Languages"
+msgstr "Lingue"
+
+#: C:\WebServers\home\vietnam.com\application\wp-content\plugins\language-plugin/language-plugin.php:308
+msgid "Mode"
+msgstr "Modalità"
+
+#: C:\WebServers\home\vietnam.com\application\wp-content\plugins\language-plugin/language-plugin.php:309
+msgid "Default"
+msgstr "Predefinita"
+
+#: C:\WebServers\home\vietnam.com\application\wp-content\plugins\language-plugin/language-plugin.php:310
+msgid "Additional"
+msgstr "Aggiuntive"
+
+#: C:\WebServers\home\vietnam.com\application\wp-content\plugins\language-plugin/language-plugin.php:314
+msgid "Delete"
+msgstr "Cancella"
+
+#: C:\WebServers\home\vietnam.com\application\wp-content\plugins\language-plugin/language-plugin.php:315
+msgid "Use hosts"
+msgstr "Usa hosts"
+
+#: C:\WebServers\home\vietnam.com\application\wp-content\plugins\language-plugin/language-plugin.php:1375
+msgid "Language menu"
+msgstr "Menu lingua"
+
+#: C:\WebServers\home\vietnam.com\application\wp-content\plugins\language-plugin/language-plugin.php:1375
+msgid "Shows the language selection menu"
+msgstr "Mostra il menu selezione lingue"
+
+#: C:\WebServers\home\vietnam.com\application\wp-content\plugins\language-plugin/language-plugin.php:311
+msgid "LANGUAGE NAME / PREFIX"
+msgstr "NOME LINGUA / PREFISSO"
+
+#: C:\WebServers\home\vietnam.com\application\wp-content\plugins\language-plugin/language-plugin.php:312
+msgid "HOST"
+msgstr "HOST"
+
+#: C:\WebServers\home\vietnam.com\application\wp-content\plugins\language-plugin/language-plugin.php:312
+msgid "Add new"
+msgstr "Aggiungi nuova"
+
+#: C:\WebServers\home\vietnam.com\application\wp-content\plugins\language-plugin/language-plugin.php
+msgid "Permalink:"
+msgstr "Permalink:"
+
+#: C:\WebServers\home\vietnam.com\application\wp-content\plugins\language-plugin/language-plugin.php
+msgid "Are you sure? Check out hosts again, before pressing OK!"
+msgstr "Sei sicuro? Controlla di nuovo gli hosts, prima di cliccare OK!"
+
+#: C:\WebServers\home\vietnam.com\application\wp-content\plugins\language-plugin/language-plugin.php
+msgid "Please fill hostname"
+msgstr "Per favore riempi il campo hosts"
+
+#: C:\WebServers\home\vietnam.com\application\wp-content\plugins\language-plugin/language-plugin.php
+msgid "Stella languages"
+msgstr "Lingue di Stella"
+
+#: C:\WebServers\home\vietnam.com\application\wp-content\plugins\language-plugin/language-plugin.php
+msgid "Some hosts not valid:"
+msgstr "Alcuni hosts non validi:"
+
+#: C:\WebServers\home\vietnam.com\application\wp-content\plugins\language-plugin/language-plugin.php
+msgid "Multiple use of language"
+msgstr "Usi multipli di lingua"
+
+#: C:\WebServers\home\vietnam.com\application\wp-content\plugins\language-plugin/language-plugin.php
+msgid "Multiple use of host"
+msgstr "Usi multipli di hosts"
+
+#: C:\WebServers\home\vietnam.com\application\wp-content\plugins\language-plugin/language-plugin.php
+msgid "Some fields are empty:"
+msgstr "Alcuni campi sono vuoti:"
+
+#: C:\WebServers\home\vietnam.com\application\wp-content\plugins\language-plugin/language-plugin.php
+msgid "Transfer default language content"
+msgstr "Usa il contenuto della lingua predefinita"
+
+#: C:\WebServers\home\vietnam.com\application\wp-content\plugins\language-plugin/language-plugin.php
+msgid ""
+"With this option on default language content will be transferred to empty "
+"local content"
+msgstr ""
+"Selezionando questa opzione il contenuto della lingua predefinita verrà "
+"replicato nelle lingue lasciate vuote"
+
+#: C:\WebServers\home\vietnam.com\application\wp-content\plugins\language-plugin/language-plugin.php
+msgid ""
+"If you are planing to use hosts with multisite, please put <code>define"
+"('SUNRISE', true);</code> in your wp-config.php and copy sunrise.php from "
+"plugin dir to your wp-content folder."
+msgstr ""
+"Per usare hosts in modalità multisito devi inserire <code>define('SUNRISE', "
+"true);</code>nel tuo file  wp-config.php е copiare sunrise.php dalla "
+"cartella del plugin alla cartella wp-content."
+
+#: C:\WebServers\home\vietnam.com\application\wp-content\plugins\language-plugin/language-plugin.php
+msgid ""
+"If you are planing to use hosts with multisite, please copy sunrise.php from "
+"plugin dir to your wp-content folder."
+msgstr ""
+"Per usare hosts in modalità multisito devi copiare sunrise.php dalla "
+"cartella del plugin alla cartella wp-content."
+
+#: C:\WebServers\home\vietnam.com\application\wp-content\plugins\language-plugin/language-plugin.php
+msgid "Hosts with multisite subfolders are not supported"
+msgstr "Hosts con sotto cartelle multisito non sono supportate"
+
+#: C:\WebServers\home\vietnam.com\application\wp-content\plugins\language-plugin/language-plugin.php
+msgid ""
+"Currently localization is not active. To enable Stella to localize your "
+"page, please set hosts mode on"
+msgstr ""
+"Localizzazione attualmente non attiva. Per abilitare Stella a localizzare la "
+"tua pagina, per favore seleziona il modo hosts"
+
+#: C:\WebServers\home\vietnam.com\application\wp-content\plugins\language-plugin/language-plugin.php
+msgid "or enable"
+msgstr "o abilita"
+
+msgid "Stella language menu"
+msgstr "Menu lingua Stella"
+
+msgid "Display empty field notices"
+msgstr "Mostra avvisi campi lasciati vuoti"
+
+#: C:\WebServers\home\vietnam.com\application\wp-content\plugins\language-plugin/language-plugin.php
+msgid ""
+"Stella-free is not avalable on multisite. Learn more about full version on "
+msgstr ""
+"La versione free di Stella non è disponibile per multisito. Scopri di più "
+"sulla versione a pagamento su"
+
+#: C:\WebServers\home\vietnam.com\application\wp-content\plugins\language-plugin/language-plugin.php
+msgid "This option is not available in free version"
+msgstr "Questa opzione non è disponibile nella versione free"
+
+#: C:\WebServers\home\vietnam.com\application\wp-content\plugins\language-plugin/language-plugin.php
+msgid "Free version supports only one additional language"
+msgstr "La versione free supporta solo una lingua aggiuntiva"
+
+#: C:\WebServers\home\vietnam.com\application\wp-content\plugins\language-plugin/language-plugin.php
+msgid "Learn more about full version on "
+msgstr "Scopri di più sulla versione a pagamento su"
