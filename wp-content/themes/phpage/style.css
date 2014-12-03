@@ -59,3 +59,7 @@ root {
   display: block;
   float: right;
 }
+
+.blog-title {
+  margin-top: 0px;
+}
