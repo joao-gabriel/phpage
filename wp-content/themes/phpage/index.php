@@ -43,8 +43,10 @@
 
     <nav>
       <ul class="pager">
-        <li><a href="#">Previous</a></li>
-        <li><a href="#">Next</a></li>
+
+        <li>
+          <?php posts_nav_link(' ', 'Previous', 'Next'); ?>        
+        </li>
       </ul>
     </nav>
 
