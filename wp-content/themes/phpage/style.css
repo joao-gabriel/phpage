@@ -48,6 +48,10 @@ root {
   margin-top: 20px;
 }
 
+.bottom20 {
+  margin-bottom: 20px;
+}
+
 .campo-busca {
   width: 79%;
   display: block;
