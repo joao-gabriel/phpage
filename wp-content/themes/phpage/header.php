@@ -1,4 +1,9 @@
+<?php
+if (!is_user_logged_in()) {
 
+  require_once ('embreve.php');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -45,19 +50,24 @@
     </div>
 
     <div class="container">
-      <div class='row'>
-        <div class="col-md-3 top20 pull-right">
-          <div class="form-group">
-            <form action="<?php echo home_url(); ?>/" method="get">
-              <input type="text" class="form-control campo-busca" placeholder="Search" name="s"/>
-              <button type="submit" class="btn btn-info btn-busca">
-                <span class="glyphicon-search glyphicon"></span>
-              </button>
-            </form>
+      <div class="blog-header">
+        <div class="row">
+
+          <div class="col-md-3 col-xs-12 top20 pull-right bottom20">
+            <div class="form-group">
+              <form action="<?php echo home_url(); ?>" method="get">
+                <input type="text" class="form-control campo-busca" placeholder="Search" name="s">
+                <button type="submit" class="btn btn-info btn-busca">
+                  <span class="glyphicon-search glyphicon"></span>
+                </button>
+              </form>
+            </div>
+          </div><div class="col-md-9 col-xs-12 pull-left">
+            <h1 class="blog-title">PHPage</h1>
           </div>
         </div>
-      </div>
-      <div class="blog-header">
-        <h1 class="blog-title">PHPage</h1>
-        <p class="lead blog-description">PHP + MySQL + Wordpress + CakePHP + HTML5 + jQuery + CSS + Arduino + Whatever fits :P</p>
+        <div class="row">  
+          <div class="col-md-12">
+            <p class="lead blog-description">PHP + MySQL + Wordpress + CakePHP + HTML5 + jQuery + CSS + Arduino + Whatever fits :P</p></div>
+        </div>
       </div>
