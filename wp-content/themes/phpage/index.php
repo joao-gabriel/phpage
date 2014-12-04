@@ -13,17 +13,23 @@
 
         <div class="blog-post">
           <h2 class="blog-post-title"><?php the_title(); ?></h2>
-          <p class="blog-post-meta"><?php the_time('F d, Y'); ?> by <?php the_author_link(); ?></p>
+          <p class="blog-post-meta">
+            <?php the_time('F d, Y'); ?> by <?php the_author_link(); ?><br />
+            <?php echo get_the_category_list(', '); ?>
+          </p>
 
+          <?php the_content(); ?>
+          <p>
+            <?php the_tags(); ?>
+          </p>
           <?php
-          the_content();
-
           if (!post_password_required() && ( comments_open() || get_comments_number() )) :
             ?>
-            <span class="comments-link"><?php comments_popup_link(__('Leave a comment', 'twentyfourteen'), __('1 Comment', 'twentyfourteen'), __('% Comments', 'twentyfourteen')); ?></span>
+            <span class="comments-link pull-right"><?php comments_popup_link(__('Leave a comment', 'twentyfourteen'), __('1 Comment', 'twentyfourteen'), __('% Comments', 'twentyfourteen')); ?></span>
             <?php
           endif;
           ?>
+          <div class="clearfix"></div>
 
 
 

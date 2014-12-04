@@ -11,6 +11,18 @@
       ?>
      </ol>
   </div>
+  
+  <div class="sidebar-module">
+    <h4>Categories</h4>
+    <ol class="list-unstyled">    
+      <?php 
+      wp_list_categories(array('style' => 'list', 'title_li' => '', 'show_count' => true));
+      ?>
+     </ol>
+  </div>
+  
+  
+  
   <div class="sidebar-module">
     <h4>Elsewhere</h4>
     <ol class="list-unstyled">
