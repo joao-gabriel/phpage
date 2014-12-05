@@ -67,3 +67,11 @@ root {
 .blog-title {
   margin-top: 0px;
 }
+
+.blog-post-title {
+  margin-bottom: 25px;
+}
+
+.syntaxhighlighter {
+  font-size: 14px !important;
+}

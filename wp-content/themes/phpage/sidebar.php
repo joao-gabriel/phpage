@@ -2,8 +2,9 @@
   <div class="sidebar-module sidebar-module-inset">
     <h4>About</h4>
     <p><?php
-      $about = get_post(2);
-      echo $about->post_content;
+      $post = get_post(2);
+      setup_postdata($post);
+      the_content();
       ?></p>
   </div>
   <div class="sidebar-module">
