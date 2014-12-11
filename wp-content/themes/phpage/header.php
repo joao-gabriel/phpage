@@ -48,8 +48,8 @@ if (!is_user_logged_in()) {
         ?>
       </div>
     </div>
-
-    <div class="container">
+    
+    <div class="container top40">
       <div class="blog-header">
         <div class="row">
 

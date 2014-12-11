@@ -1,6 +1,6 @@
 <?php get_header() ?>
 
-<?php _('Resultado da busca'); ?>
+<?php echo _('Resultado da busca'); ?>
 
 <div class="row">
 
