@@ -10,8 +10,15 @@ $(document).ready(function() {
   
   // English menu "Home" link fix 
   if ($('.blog-nav li:last-child').text()==='PT'){
-    $('.blog-nav li:first-child a').attr('href', 'http://108.167.188.18/~phpag314/en/');
+    $('.blog-nav li:first-child a').attr('href', 'http://www.phpage.com.br/en/');
+    
+     $('a[rel="author external"]').attr('href', 'http://www.phpage.com.br/en/joao/');
+    
   }
   
+  // Bootstrap comment submit button
+  $('#submit').addClass('btn btn-info');
+  
+  
+ 
 });
-
