@@ -1,12 +1,13 @@
 <?php get_header() ?>
 
-<?php echo _('Resultado da busca'); ?>
+
 
 <div class="row">
 
   <div class="col-sm-8 blog-main">
 
-
+    <h1><?php echo _('Search results for'); ?> "<?php echo $_GET['s'];?>"</h1>
+    
     <?php
     if (have_posts()) {
       while (have_posts()) {
@@ -27,7 +28,7 @@
           <?php
           if (!post_password_required() && ( comments_open() || get_comments_number() )) :
             ?>
-            <span class="comments-link pull-right"><?php comments_popup_link(__('Leave a comment', 'twentyfourteen'), __('1 Comment', 'twentyfourteen'), __('% Comments', 'twentyfourteen')); ?></span>
+            <span class="comments-link pull-right"><?php comments_popup_link(__('Leave a comment'), __('1 Comment'), __('% Comments')); ?></span>
             <?php
           endif;
           ?>
@@ -47,7 +48,7 @@
       <ul class="pager">
 
         <li>
-          <?php posts_nav_link(' ', 'Previous', 'Next'); ?>        
+          <?php posts_nav_link(' ', __('Previous'), __('Next')); ?>        
         </li>
       </ul>
     </nav>
