@@ -6,7 +6,9 @@
 
   <div class="col-sm-8 blog-main">
 
-    <h1><?php echo _('Search results for'); ?> "<?php echo $_GET['s'];?>"</h1>
+    <h1><?php 
+    echo  __('Search results for', 'phpage'); 
+    ?> "<?php echo $_GET['s'];?>"</h1>
     
     <?php
     if (have_posts()) {

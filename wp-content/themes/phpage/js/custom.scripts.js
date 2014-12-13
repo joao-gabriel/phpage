@@ -7,24 +7,20 @@ $(document).ready(function() {
     $('.wpcf7 .screen-reader-response, .wpcf7 .wpcf7-response-output').addClass('alert alert-info');
   }
   $('.wpcf7 input[type=submit]').removeClass('form-control').addClass('btn btn-info');
-
-  // English menu "Home" link fix 
-  if ($('.blog-nav li:last-child').text() === 'PT') {
+  
+  
+  if ($('.blog-nav li:last-child').text()==='PT'){
+    // English menu "Home" link fix 
     $('.blog-nav li:first-child a').attr('href', 'http://www.phpage.com.br/en/');
-
-    $('a[rel="author external"]').attr('href', 'http://www.phpage.com.br/en/joao/');
-
+    // English "Author" link fix 
+     $('a[rel="author external"]').attr('href', 'http://www.phpage.com.br/en/joao/');
   }
+  
 
+  
   // Bootstrap comment submit button
   $('#submit').addClass('btn btn-info');
-
-
-  if (window.location.href.indexOf('#content') !== -1) {
-    $('html, body').animate({
-      scrollTop: $(".blog-main").offset().top - 40
-    }, 500);
-  }
-
-
+  
+  
+ 
 });

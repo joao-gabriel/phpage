@@ -30,7 +30,7 @@ $tag = get_term_by('slug', $wp_query->query_vars['tag'], 'post_tag');
           <?php
           if (!post_password_required() && ( comments_open() || get_comments_number() )) :
             ?>
-            <span class="comments-link pull-right"><?php comments_popup_link(__('Leave a comment', 'twentyfourteen'), __('1 Comment', 'twentyfourteen'), __('% Comments', 'twentyfourteen')); ?></span>
+            <span class="comments-link pull-right"><?php comments_popup_link(__('Leave a comment'), __('1 Comment'), __('% Comments')); ?></span>
             <?php
           endif;
           ?>
