@@ -4,14 +4,13 @@ if (!is_user_logged_in()) {
 //  require_once ('embreve.php');
 }
 global $locale;
-
 ?>
 <!DOCTYPE html>
 <html>
-  
+
   <head>
     <meta charset="utf-8">
-    <META http-equiv="Content-Language" content="<?php echo str_replace('_', '-', $locale);?>">
+    <META http-equiv="Content-Language" content="<?php echo str_replace('_', '-', $locale); ?>">
     <base href="<?php echo get_stylesheet_directory_uri(); ?>/" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,7 +28,7 @@ global $locale;
 
     <!-- Custom styles for this theme -->
     <link href="style.css" rel="stylesheet">
-    
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -47,13 +46,29 @@ global $locale;
       <div class="container">
         <?php
         $args = array(
+            'menu' => 'principal',
             'container' => 'nav',
-            'container_class' => 'blog-nav',
+            'container_class' => 'blog-nav pull-left',
             'items_wrap' => '%3$s'
         );
         wp_nav_menu($args);
         ?>
+        <?php
+        $args = array(
+            'menu' => 10,
+            'container' => 'nav',
+            'container_class' => 'blog-nav pull-right idiomas',
+            'items_wrap' => '%3$s'
+        );
+        wp_nav_menu($args);
+        ?>
+
+
+
+
+
       </div>
+
     </div>
 
     <div class="container top40">

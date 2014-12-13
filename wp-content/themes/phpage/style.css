@@ -10,6 +10,7 @@ root {
 
 .blog-nav {
   position: relative;
+  min-width: 300px
 }
 
 .blog-nav-item a, .blog-nav li:last-child a {
@@ -35,12 +36,6 @@ root {
   border-left: 5px solid transparent;
 }
 
-.blog-nav li:last-child{
-  list-style: none;
-  position: absolute;
-  right: 0px;
-  top: 10px;
-}
 
 .top20 {
   margin-top: 20px;
@@ -84,4 +79,8 @@ root {
   width: 100%;
   height: 40px;
   z-index: 9999;
+}
+
+.idiomas {
+  min-width: 10px;
 }

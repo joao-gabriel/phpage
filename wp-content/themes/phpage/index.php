@@ -1,28 +1,21 @@
 <?php get_header() ?>
-
 <div class="row">
-
   <div class="col-sm-8 blog-main">
-
-
     <?php
-    __('December', 'phpage');
-
     if (have_posts()) {
       while (have_posts()) {
         the_post();
         ?>
-
         <div class="blog-post">
           <h2 class="blog-post-title"><?php the_title(); ?></h2>
           <p class="blog-post-meta">
-    <?php echo date_i18n("d F Y (H:i)", strtotime(get_the_time('F d, Y'))); ?> by <?php the_author_link(); ?><br />
-    <?php echo get_the_category_list(', '); ?>
+            <?php echo get_the_time('F d, Y'); ?> by <?php the_author_link(); ?><br />
+            <?php echo get_the_category_list(', '); ?>
           </p>
 
-            <?php the_content(); ?>
+          <?php the_content(); ?>
           <p>
-    <?php the_tags(); ?>
+            <?php the_tags(); ?>
           </p>
           <?php
           if (!post_password_required() && ( comments_open() || get_comments_number() )) :
@@ -32,30 +25,19 @@
           endif;
           ?>
           <div class="clearfix"></div>
-
-
-
         </div><!-- /.blog-post -->  
-
-
-    <?php
-  }
-}
-?>
-
+        <?php
+      }
+    }
+    ?>
     <nav>
       <ul class="pager">
-
         <li>
-<?php posts_nav_link(' ', 'Previous', 'Next'); ?>        
+          <?php posts_nav_link(' ', 'Previous', 'Next'); ?>        
         </li>
       </ul>
     </nav>
-
   </div><!-- /.blog-main -->
-
-<?php get_sidebar(); ?>
-
+  <?php get_sidebar(); ?>
 </div><!-- /.row -->
-
-  <?php get_footer(); ?>
+<?php get_footer(); ?>
