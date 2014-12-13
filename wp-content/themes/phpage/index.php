@@ -33,7 +33,7 @@
     <nav>
       <ul class="pager">
         <li>
-          <?php posts_nav_link(' ', 'Previous', 'Next'); ?>        
+          <?php posts_nav_link(' ', __('Previous'), __('Next')); ?>        
         </li>
       </ul>
     </nav>

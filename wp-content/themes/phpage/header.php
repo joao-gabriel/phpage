@@ -62,19 +62,11 @@ global $locale;
         );
         wp_nav_menu($args);
         ?>
-
-
-
-
-
       </div>
-
     </div>
-
     <div class="container top40">
       <div class="blog-header">
         <div class="row">
-
           <div class="col-md-3 col-xs-12 top20 pull-right bottom20">
             <div class="form-group">
               <form action="<?php echo home_url(); ?>/" method="get">

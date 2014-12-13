@@ -21,25 +21,20 @@ jQuery(document).ready(function($) {
       }
     }
 
-    var url = window.location.pathname.split('/');
+    var url = window.location.href.replace(window.location.protocol + '//', '').split('/');
 
     // If it is running locally change the starting index for building the URL:
-    if (window.location.hostname === 'localhost') {
-      var langIndex = 2;    
-      var redirectUrl = window.location.protocol + '//' + window.location.hostname + '/' + url[0];
-    } else {
-      var langIndex = 1;
-      var redirectUrl = window.location.protocol + '//' + window.location.hostname;
-    }
+    var langIndex = (window.location.hostname === 'localhost') ? 2 : 1;
 
     // Change the language on the URL
     url[langIndex] = selectedLang;
-    
+
     // Build the URL for this address in the selected language
-    for (i = langIndex-1; i < url.length; i++) {
+    var redirectUrl = window.location.protocol + '/';
+    for (i = 0; i < url.length; i++) {
       redirectUrl += '/' + url[i];
     }
-    
+
     window.location.href = redirectUrl;
     return false;
 

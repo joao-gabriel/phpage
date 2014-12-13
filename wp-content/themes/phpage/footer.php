@@ -1,16 +1,11 @@
 </div><!-- /.container -->
-
 <footer class="blog-footer">
-  <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-  <p>Modified by <a href="mailto:joaogabrielv@gmail.com">João Gabriel</a>.</p>
+  <p><?php _e('Blog template built for'); ?> <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+  <p><?php _e('Modified by'); ?> <a href="mailto:joaogabrielv@gmail.com">João Gabriel</a>.</p>
   <p>
-    <a href="<?php echo the_permalink(); ?>">Back to top</a>
+    <a href="<?php echo the_permalink(); ?>" id="back-to-top"><?php _e('Back to top', 'phpage'); ?></a>
   </p>
 </footer>
-
-
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="js/ie10-viewport-bug-workaround.js"></script>
 <?php wp_footer(); ?>
 <style>
   .syntaxhighlighter {

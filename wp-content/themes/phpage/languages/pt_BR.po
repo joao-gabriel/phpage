@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PHPage v0.1b\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2014-12-13 14:47:27+0000\n"
+"PO-Revision-Date: 2014-12-13 23:14:38+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -36,7 +36,7 @@ msgid "Website"
 msgstr "Site"
 
 #: category.php:33
-#: index.php:30
+#: index.php:23
 #: search.php:33
 #: tag.php:33
 #@ default
@@ -44,7 +44,7 @@ msgid "Leave a comment"
 msgstr "Deixe um comentário"
 
 #: category.php:33
-#: index.php:30
+#: index.php:23
 #: search.php:33
 #: tag.php:33
 #@ default
@@ -52,7 +52,7 @@ msgid "1 Comment"
 msgstr "1 Comentário"
 
 #: category.php:33
-#: index.php:30
+#: index.php:23
 #: search.php:33
 #: tag.php:33
 #@ default
@@ -78,7 +78,7 @@ msgstr "Nome"
 #: 404.php:9
 #@ phpage
 msgid "How did you get here?! This doesn't even exist!"
-msgstr ""
+msgstr "Como você chegou até aqui?! Isso nem existe!"
 
 #: comments.php:27
 #, php-format
@@ -114,94 +114,15 @@ msgstr ""
 #: search.php:10
 #@ phpage
 msgid "Search results for"
-msgstr ""
+msgstr "Resultados da busca por "
 
 #: search.php:53
 #@ default
 msgid "Previous"
 msgstr ""
 
-
-#. translators: month name
-#: wp-includes/locale.php:131
-#: wp-includes/locale.php:146
+#: functions.php:7
 #@ default
-msgid "January"
-msgstr "janeiro"
+msgid "Languages"
+msgstr ""
 
-#. translators: month name
-#: wp-includes/locale.php:132
-#: wp-includes/locale.php:147
-#@ default
-msgid "February"
-msgstr "fevereiro"
-
-#. translators: month name
-#: wp-includes/locale.php:133
-#: wp-includes/locale.php:148
-#@ default
-msgid "March"
-msgstr "março"
-
-#. translators: month name
-#: wp-includes/locale.php:134
-#: wp-includes/locale.php:149
-#@ default
-msgid "April"
-msgstr "abril"
-
-#. translators: month name
-#: wp-includes/locale.php:135
-#: wp-includes/locale.php:150
-#@ default
-msgid "May"
-msgstr "maio"
-
-#. translators: month name
-#: wp-includes/locale.php:136
-#: wp-includes/locale.php:151
-#@ default
-msgid "June"
-msgstr "junho"
-
-#. translators: month name
-#: wp-includes/locale.php:137
-#: wp-includes/locale.php:152
-#@ default
-msgid "July"
-msgstr "julho"
-
-#. translators: month name
-#: wp-includes/locale.php:138
-#: wp-includes/locale.php:153
-#@ default
-msgid "August"
-msgstr "agosto"
-
-#. translators: month name
-#: wp-includes/locale.php:139
-#: wp-includes/locale.php:154
-#@ default
-msgid "September"
-msgstr "setembro"
-
-#. translators: month name
-#: wp-includes/locale.php:140
-#: wp-includes/locale.php:155
-#@ default
-msgid "October"
-msgstr "outubro"
-
-#. translators: month name
-#: wp-includes/locale.php:141
-#: wp-includes/locale.php:156
-#@ default
-msgid "November"
-msgstr "novembro"
-
-#. translators: month name
-#: wp-includes/locale.php:142
-#: wp-includes/locale.php:157
-#@ default
-msgid "December"
-msgstr "dezembro"
