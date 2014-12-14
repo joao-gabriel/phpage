@@ -44,6 +44,4 @@ jQuery(document).ready(function($) {
   // Bootstrap comment submit button
   $('#submit').addClass('btn btn-info');
 
-
-
 });

@@ -10,7 +10,7 @@ root {
 
 .blog-nav {
   position: relative;
-  min-width: 300px
+  min-width: 213px;
 }
 
 .blog-nav-item a, .blog-nav li:last-child a {
@@ -83,4 +83,13 @@ root {
 
 .idiomas {
   min-width: 10px;
+}
+
+h3 {
+  margin-top: 30px !important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
