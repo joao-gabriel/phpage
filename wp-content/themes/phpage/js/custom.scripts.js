@@ -44,4 +44,11 @@ jQuery(document).ready(function($) {
   // Bootstrap comment submit button
   $('#submit').addClass('btn btn-info');
 
+  // Back to top button
+  $('#back-to-top').click(function() {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 800);
+  });
+
 });

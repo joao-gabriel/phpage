@@ -25,7 +25,7 @@
     </ol>
   </div>
   <div class="sidebar-module">
-    <h4>Elsewhere</h4>
+    <h4><?php _e('Elsewhere'); ?></h4>
     <ol class="list-unstyled">
       <li><a href="http://www.github.com/joao-gabriel/" target="_blank">GitHub</a></li>
       <li><a href="http://www.facebook.com.br/" target="_blank">Facebook</a></li>
