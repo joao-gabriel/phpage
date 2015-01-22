@@ -28,7 +28,7 @@
     <h4><?php _e('Elsewhere'); ?></h4>
     <ol class="list-unstyled">
       <li><a href="http://www.github.com/joao-gabriel/" target="_blank">GitHub</a></li>
-      <li><a href="http://www.facebook.com.br/" target="_blank">Facebook</a></li>
+      <?/*<li><a href="http://www.facebook.com.br/" target="_blank">Facebook</a></li>*/?>
     </ol>
   </div>
 </div><!-- /.blog-sidebar -->
