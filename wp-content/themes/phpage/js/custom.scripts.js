@@ -8,39 +8,6 @@ jQuery(document).ready(function($) {
   }
   $('.wpcf7 input[type=submit]').removeClass('form-control').addClass('btn btn-info');
 
-
-
-//  // Language items
-//  $('.idiomas li a').click(function() {
-//
-//    // Check what language was selected
-//    var langs = ['en', 'pt'];
-//    for (i = 0; i < langs.length; i++) {
-//      if ($(this).parent().hasClass(langs[i])) {
-//        var selectedLang = langs[i];
-//      }
-//    }
-//
-//    var url = window.location.href.replace(window.location.protocol + '//', '').split('/');
-//
-//    // If it is running locally change the starting index for building the URL:
-//    var langIndex = (window.location.hostname === 'localhost') ? 2 : 1;
-//
-//    // Change the language on the URL
-//    url[langIndex] = selectedLang;
-//
-//    // Build the URL for this address in the selected language
-//    var redirectUrl = window.location.protocol + '/';
-//    for (i = 0; i < url.length; i++) {
-//      redirectUrl += '/' + url[i];
-//    }
-//
-//    window.location.href = redirectUrl;
-//    return false;
-//
-//  });
-
-
   // Bootstrap comment submit button
   $('#submit').addClass('btn btn-info');
 

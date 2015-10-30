@@ -16,9 +16,9 @@ global $locale;
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    
+
 <!--    <meta property="og:image" content="http://www.phpage.com.br/wp-content/uploads/2015/01/2000px-PHP-logo.svg_.png" />-->
-    
+
     <link rel="icon" href="../../favicon.ico">
 
     <title>PHPage</title>
@@ -57,26 +57,15 @@ global $locale;
         wp_nav_menu($args);
         ?>
         <?php
-        the_post();
-        $items = wp_get_nav_menu_items('idiomas');
-        $languages = array('en', 'pt');
-        echo '<nav class="blog-nav pull-right idiomas">';
-        
-        foreach ($items as $item) {
-          $linkLang = explode(' ', $item->classes);
-          foreach ($languages as $value) {
-            
-          }
-          $itemUrl = preg_replace('/\/([a-z]{2})\//', '', $_SERVER['REQUEST_URI']);
-          echo '
-            <li id="menu-item-' . $item->db_id . '" class="' . implode(' ', $item->classes) . '">
-              <a title="' . $item->attr_title . '" href="' . $itemUrl . '">  
-                ' . $item->post_title . '
-              </a>
-            </li>';
-        }
-        echo '</nav>';
+        $args = array(
+            'menu' => 'idiomas',
+            'container' => 'nav',
+            'container_class' => 'blog-nav pull-right',
+            'items_wrap' => '%3$s'
+        );
+        wp_nav_menu($args);
         ?>
+
       </div>
     </div>
     <div class="container top40">
@@ -95,7 +84,7 @@ global $locale;
             <h1 class="blog-title">PHPage</h1>
           </div>
         </div>
-        <div class="row">  
+        <div class="row">
           <div class="col-md-12">
             <p class="lead blog-description">PHP + MySQL + Wordpress + CakePHP + HTML5 + jQuery + CSS + Arduino + Whatever fits :P</p></div>
         </div>
