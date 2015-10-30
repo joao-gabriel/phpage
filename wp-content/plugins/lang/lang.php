@@ -44,8 +44,47 @@ function setup_plugin() {
   register_nav_menu( 'languages', __('Languages') );
 
   wp_register_script('lang_script', plugins_url() . '/lang/js/lang.js', array('jquery'), '2323', TRUE);
+  wp_localize_script('lang_script', 'myAjax', array('ajaxurl' => admin_url('admin-ajax.php')));
+
 	wp_enqueue_script('lang_script');
 
 
 }
 add_action( 'init', 'setup_plugin', 0 );
+
+
+function check_language($query){
+
+	if (!is_admin()){
+
+		// Check what language is on session and loads only content from it
+
+
+	}
+
+}
+
+add_filter( 'pre_get_posts', 'check_language');
+
+add_action( 'wp_ajax_set_language', 'set_language' );
+add_action( 'wp_ajax_nopriv_set_language', 'set_language' );
+
+function set_language() {
+    die('selected: '.$_POST['data']);
+
+		if (!session_id()){
+			session_start();
+		}
+		$_SESSION['lang_plugin_selected_language'];
+
+
+		// TODO:
+    //global $locale;
+		//save the current language for later
+		//$current_language = $locale;
+		//$new_language = 'pt_BR';
+
+		//load the new text domain
+		//load_textdomain( $your_language_domain, LANGUAGE_PATH.'/'.$your_domain.'-'.$new_language.'.mo' );
+
+}
