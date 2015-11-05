@@ -1,0 +1,1 @@
+6;V<?php exit; ?>a:1:{s:7:"content";a:3:{s:31:"_yoast_wpseo_linkdexlang_suffix";a:1:{i:0;s:1:"0";}s:10:"_edit_lock";a:1:{i:0;s:12:"1445703932:1";}s:10:"_edit_last";a:1:{i:0;s:1:"1";}}}
