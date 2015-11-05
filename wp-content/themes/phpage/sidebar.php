@@ -9,7 +9,7 @@
   </div>
   <div class="sidebar-module">
     <h4><?php _e('Archives', 'phpage'); ?></h4>
-    <ol class="list-unstyled">    
+    <ol class="list-unstyled">
       <?php
       wp_get_archives(array('format' => 'custom'));
       ?>
@@ -18,7 +18,7 @@
 
   <div class="sidebar-module">
     <h4><?php _e('Categories', 'phpage'); ?></h4>
-    <ol class="list-unstyled">    
+    <ol class="list-unstyled">
       <?php
       wp_list_categories(array('style' => 'list', 'title_li' => '', 'show_count' => true));
       ?>
@@ -28,7 +28,7 @@
     <h4><?php _e('Elsewhere'); ?></h4>
     <ol class="list-unstyled">
       <li><a href="http://www.github.com/joao-gabriel/" target="_blank">GitHub</a></li>
-      <?/*<li><a href="http://www.facebook.com.br/" target="_blank">Facebook</a></li>*/?>
+      <?php /*<li><a href="http://www.facebook.com.br/" target="_blank">Facebook</a></li>*/?>
     </ol>
   </div>
 </div><!-- /.blog-sidebar -->

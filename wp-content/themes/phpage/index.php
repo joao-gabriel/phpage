@@ -1,6 +1,7 @@
 <?php get_header() ?>
 <div class="row">
   <div class="col-sm-8 blog-main">
+
     <?php
     if (have_posts()) {
       while (have_posts()) {
@@ -13,7 +14,8 @@
             <?php echo get_the_category_list(', '); ?>
           </p>
 
-          <?php the_content(); ?>
+          <?php the_excerpt(); ?>
+					<a class="pull-right" href="<?php echo get_permalink();?>"><?php echo __('Read more'); ?></a>
           <p>
             <?php the_tags(); ?>
           </p>
@@ -25,7 +27,7 @@
           endif;
           ?>
           <div class="clearfix"></div>
-        </div><!-- /.blog-post -->  
+        </div><!-- /.blog-post -->
         <?php
       }
     }
@@ -33,7 +35,7 @@
     <nav>
       <ul class="pager">
         <li>
-          <?php posts_nav_link(' ', __('Previous'), __('Next')); ?>        
+          <?php posts_nav_link(' ', __('Previous'), __('Next')); ?>
         </li>
       </ul>
     </nav>

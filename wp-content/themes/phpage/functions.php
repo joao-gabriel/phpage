@@ -4,7 +4,6 @@ add_theme_support('post-thumbnails');
 
 function register_my_menu() {
   register_nav_menu('header-menu', __('Header Menu'));
-  register_nav_menu('languages', __('Languages'));
 }
 
 add_action('init', 'register_my_menu');
@@ -20,6 +19,15 @@ function my_script_enqueuer() {
   wp_enqueue_script('bootstrap.min');
   wp_enqueue_script('ie10-workaround');
   wp_enqueue_script('my_script');
+
+	wp_register_style( 'bootstrap', get_stylesheet_directory_uri() . '/css/bootstrap.min.css', false, false, 'all' );
+	wp_register_style( 'blog', get_stylesheet_directory_uri() . '/css/blog.css', false, false, 'all' );
+	wp_register_style( 'style', get_stylesheet_directory_uri() . '/style.css', false, false, 'all' );
+
+	wp_enqueue_style( 'bootstrap' );
+	wp_enqueue_style( 'blog' );
+	wp_enqueue_style( 'style' );
+
 }
 
 add_action('init', 'my_script_enqueuer');
